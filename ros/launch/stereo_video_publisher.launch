@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+
+    <node pkg="video_publisher" type="video_publisher" name="camera" output="screen" respawn="false">
+        <param name="left_camera_file" value="$(arg left_camera_file)" />
+        <param name="right_camera_file" value="$(arg right_camera_file)" />
+        <param name="start_time" type="double" value="0.0" />
+        <param name="stop_time" type="double" value="-1.0" />
+    </node>
+</launch>
